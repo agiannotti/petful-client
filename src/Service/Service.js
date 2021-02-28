@@ -1,6 +1,6 @@
 import API from '../config';
 
-const API = {
+const ApiService = {
   getDog() {
     return fetch(`${API}/dogs`)
       .then((res) => {
@@ -29,4 +29,4 @@ const API = {
   },
 };
 
-export default API;
+export default ApiService;
