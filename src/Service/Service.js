@@ -15,7 +15,7 @@ const ApiService = {
       .catch((error) => console.error(error));
   },
   getCat() {
-    return fetch(`${API}/dogs`)
+    return fetch(`${API}/cats`)
       .then((res) => {
         if (!res.ok) {
           return res.json().then((e) => Promise.reject(e));
